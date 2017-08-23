@@ -1,0 +1,136 @@
+
+body{
+ background: #018c92;
+    
+}
+h1{
+    color: aliceblue;
+    text-align: center;
+    font-size: 35px;
+}
+
+img{
+    border-radius: 50%;
+    cursor: pointer;
+    float: left;
+    margin-right: 50px;
+}
+/*dropdown*/
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 110px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+/*btn guarda*/
+.dropbtnG {
+    background-color: dodgerblue;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+label{
+    color: azure;
+    font-size: 16px;
+}
+#alarma_activa{
+    visibility: hidden;
+}
+
+#button_alarma {
+    visibility: visible;
+   
+}
+#button_alarma input{
+  background: url("/img/activar_alart.png") no-repeat;
+    width:375px;
+    height: 370px;
+    cursor: pointer;
+}
+/*card*/
+.container {
+  background: #ddd;
+  height: 420px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+    border-radius: 0 20px;;
+}
+.front, .back {
+  top: 0;
+  height: 350px;
+  width: 350px;
+  background: red;
+  font-size: 50px;
+  position: absolute;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+.card {
+  height: 350px;
+  width: 350px;
+  position: relative;
+  transition: all 1s;
+  transform-style: preserve-3d;
+  box-shadow: 5px 5px 3px rgba(0,0,0,0.5);
+  cursor: pointer;
+  border-radius: 40px;
+}
+.front {
+  background: #7a5e3d;
+  background: url('/img/activar_alart.png');
+  background-size: cover;
+}
+
+.back {
+  background: green;
+  border-radius: 40px;
+  transform: rotateY(180deg);
+  background-image: url('/img/activada.png');
+  background-size: cover;
+}
+.wrapper {
+ height: 320px;
+  width: 350px;
+}
+.wrapper:hover > .card {
+  transform: rotateY(180deg);
+  box-shadow: -3px 5px 3px rgba(0,0,0,0.5);
+}
+
+
+
+
