@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>user account</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--bootstrap cdn-->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!--styles-->
+        <link rel="stylesheet" href="/stylesheets/loginStyles.css"/>
+    </head>
+    <body>
+            <section>
+                    <h1 class="text-center ">Activar Sensores</h1>
+                </section>
+                <center>
+                 <section id="button_alarma">
+                  
+                   <!--     <input class="alarmaImg"  type= "image" onclick="noVisible()"  id="button_alarma"  >-->
+                     <div class="container">
+                       <div class="wrapper">
+                         <div class="card" type="submit" onclick="noVisible()">
+                           <div class="back"></div>
+                           <div class="front"></div>
+                         </div>
+                       </div>
+                     </div>
+             
+                 </section>
+               </center>
+               
+               <center>
+                <section id="alarma_activa" >
+                    <div class="dropdown">
+                       <button class="dropbtn">Tipo de Sensor</button>
+                       <div class="dropdown-content">
+                         <a href="#">Camara</a>
+                         <a href="#">Pir</a>
+                         <a href="#">Infrarrojo</a>
+                       </div>
+                     </div>
+                     
+                      <div class="dropdown">
+                       <button class="dropbtn">Lugar de la casa</button>
+                       <div class="dropdown-content">
+                         <a href="#">Patio</a>
+                         <a href="#">Piscina</a>
+                         <a href="#">fachada</a>
+                       </div>
+                     </div>
+                     
+                      <div class="dropdown">
+                       <button class="dropbtn">Mode de contacto</button>
+                       <div class="dropdown-content">
+                         <a href="#">llamar al celular</a>
+                         <a href="#">enviar mensaje</a>
+                         <a href="#">enviar foto</a>
+                       </div>
+                     </div>
+                     
+                     <div >
+                       <form >
+                           <br>
+                         <label for="">Ingrese numero: +53 </label>
+                         
+                           <input type="number" name="celular">
+                        
+                       </form>  
+                     </div>
+                     <br>
+                     <button id="mybutton"  type="submit" class="dropbtnG" >Guardar</button>
+                    </section>
+                </center>
+
+                <script>
+                        function cambiarImg(){
+                          /* document.getElementById("button_alarma").style.imagen.setAttribute('src',"/img/activada.png"); */
+                           return  document.getElementById("alarma_activa").style.visibility = 'visible';
+                           //document.getElementById("button_alarma").style.visibility = 'hidden';
+                           
+                        }
+                         function noVisible(){
+                             cambiarImg();
+                            
+                      //  document.getElementById("alarma_activa").style.visibility = 'visible';
+                           
+                        // document.getElementById("button_alarma").setAttribute("background","url('/img/activada.png') no-repeat");
+                            //document.getElementById("button_alarma").style.visibility = 'hidden';
+                       //document.getElementById("button_alarma").style.imagen.setAttribute('src',"/img/activada.png") */
+                           //document.getElementById("button_alarma").style.visibility = 'hidden';
+                            /* document.getElementById("button_alarma").style.imagen.setAttribute('src','activada.png');*/
+                         }
+                        
+                      /* document.getElementById("mybutton").addEventListener("click", noVisible(){
+                          
+                            alert("button press");
+                           document.getElementById("alarma_activa").style.visibility="hidden";
+                          
+                           
+                       })*/
+                </script>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </body>
+</html>
